@@ -18,9 +18,21 @@
     --foreground: #ededed;
   }
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: #0d1117;
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100dvh;
+    background-color: #0d1117;
+    margin: 0 auto;
+    max-width: 85.5rem;
+}
+.hidden {
+    display: block;
 }

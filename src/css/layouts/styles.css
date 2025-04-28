@@ -1,0 +1,90 @@
+
+/* Header */
+.header {
+    width: 100%;
+    height: min(10dvh, 70px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #010409;
+    position: fixed;
+    top: 0;
+}
+.logo_text h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.button_cons button {
+    padding: 0.5rem 1rem;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin: 1.6rem;
+    font-weight: bold;
+    border: 0.1rem solid #fff;
+    border-radius: 1000vh;
+    transition: 0.5s ease-in-out;
+    font-size: 0.8rem;
+}
+.nav_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 1.2rem;
+}
+.nav_bar div {
+    display: none;
+}
+.nav_bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_bar li {
+    margin: 1rem;
+}
+.nav_bar_fix {
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    flex-flow: column;
+    width: 0;
+    height: 100dvh;
+    background-color: #0d1117;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    border-right: 0.1rem solid #fff;
+    opacity: 0;
+}
+.nav_bar_fix h1 {
+    font-size: 2rem;
+    margin: 0.7rem 0;
+}
+.nav_bar_fix div {
+    width: 100dvw;
+    height: auto;
+    background-color: #010409;
+    text-align: center;
+}
+.nav_bar_fix ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.nav_bar_fix li {
+    width: 100dvw;
+    height: 10dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
