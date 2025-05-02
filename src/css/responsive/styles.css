@@ -2,8 +2,8 @@
 @media(max-width: 740px){
     
     
-    .logo_text h1 {
-        margin: 1rem;
+    .logo_text h1, .nav_bar_fix h1 {
+        margin: 0.5rem;
         font-size: 1rem;
     }
     .button_cons button {
@@ -31,7 +31,10 @@
     .nav_bar ul {
         display: none;
     }
-    
-    
-    
+    .logo_text {
+        margin: 0 0 0 1rem;
+    }
+    .globe {
+        padding: 80dvw;
+    }
 }
