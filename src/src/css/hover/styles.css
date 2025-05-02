@@ -1,0 +1,9 @@
+
+/* Header */
+.button_cons button:hover {
+    opacity: 0.6;
+}
+.nav_bar_fix li:hover {
+    background-color: #fff;
+    color: #000;
+}
