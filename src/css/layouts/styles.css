@@ -131,6 +131,7 @@
 }
 .banner_back_img {
     filter: drop-shadow(0 0 20px #0f0);
+    animation: blink 1s linear infinite;
 }
 
 .banner_front {
@@ -142,17 +143,6 @@
     align-items: center;
     flex-flow: column;
 }
-.galaxy {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    z-index: -9999;
-    top: 0;
-    padding: 100dvh 100dvw;
-    animation: globe 60s linear infinite;
-}
 .globe {
     border-radius: 50%;
     position: absolute;
@@ -160,31 +150,14 @@
     justify-content: center;
     align-items: center;
     padding: 50dvw;
-    top: 20dvh;
+    top: 10dvh;
     animation: globe 60s linear infinite;
     z-index: -9999;
 }
 .globe_img {
     filter: drop-shadow(0 0 10dvw #87CEEB) brightness(1.2) contrast(1.1) saturate(1.5);
     
-}
-.sun {
-    padding: 5dvw;
-    background: #ffcc00;
-    box-shadow: 0 0 20dvw 10dvw #ffcc00;
-    position: absolute;
-    top: -25dvh;
-    border-radius: 50%;
-    filter: drop-shadow(0 0 10dvw #ffcc00) brightness(1.2) contrast(1.1) saturate(1.5);
-}
-.moon {
-    padding: 5dvw;
-    background: #f0f0f0;
-    position: absolute;
-    bottom: -25dvh;
-    border-radius: 50%;
-    box-shadow: 0 0 10dvw 5dvw #f0f0f0;
-    filter: drop-shadow(0 0 10dvw #f0f0f0) brightness(1.2) contrast(1.1) saturate(1.5);
+    
 }
 .banner_front h1 {
     font-size: 4rem;

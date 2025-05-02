@@ -24,11 +24,7 @@ export default function Banner() {
              <p>Mid-Level Developer</p>
              
             </>
-            <div className="galaxy">
-            <span className="sun"></span>
             
-            <span className="moon"></span>
-            </div>
             <span className="globe">
                 
                  <Image className="globe_img" src="/assets/Globe3.png" fill alt="Globe"/>
