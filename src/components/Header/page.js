@@ -1,7 +1,7 @@
 import "@/css/layouts/styles.css"
 import "@/css/responsive/styles.css"
 import "@/css/hover/styles.css"
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useRouter } from "next/navigation"
 import Image from "next/image"
 
@@ -14,6 +14,10 @@ export default function Header() {
     const hide = useRef(null)
     
     const hide2 = useRef(null)
+    
+    const hide3 = useRef(null)
+    
+    const fade_in = useRef(null)
     
     const router = useRouter()
     
@@ -36,8 +40,8 @@ export default function Header() {
         
             hide.current.style.width = "0"
             
-            hide2.current.style.width = "0"
-  
+            hide3.current.style.width = "0"
+              
             
         } else {
             
@@ -49,17 +53,25 @@ export default function Header() {
         
             hide.current.style.width = "30px"
         
-            hide2.current.style.width = "30px"
+            hide3.current.style.width = "30px"
             
         }
         
-          
+    
         
     }
     
+    useEffect(() => {
+        setTimeout(() => {
+            fade_in.current.style.opacity = "1"
+            fade_in.current.style.transform = "translateY(0)"
+            
+        }, 5000)
+        
+    }, [])
     
     return(
-        <div className="header">
+        <div className="header" ref={fade_in}>
         <div className="header_support">
           
         <div className="nav_bar_fix" ref={nav_burger}>
@@ -84,8 +96,8 @@ export default function Header() {
           
           <div onClick={showBurger}>
             <span ref={hide}></span>
-            <span></span>
             <span ref={hide2}></span>
+            <span ref={hide3}></span>
           </div>
           <ul>
           {links.map((link, index) => (

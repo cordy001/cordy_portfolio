@@ -1,7 +1,9 @@
 
-@media(max-width: 740px){
+@media(max-width: 700px){
     
-    
+    .banner_front h1 {
+        font-size: 3rem;
+    }
     .logo_text h1, .nav_bar_fix h1 {
         margin: 0.5rem;
         font-size: 1rem;
@@ -34,7 +36,15 @@
     .logo_text {
         margin: 0 0 0 1rem;
     }
-    .globe {
-        padding: 80dvw;
+    .banner_effects span {
+        padding: 40%;
+    }
+    .banner_effect1 { 
+        left: -80dvw;
+        transform: translateX(140dvw);
+    }
+    .banner_effect2 {
+        right: -80dvw;
+        transform: translateX(-140dvw);
     }
 }
