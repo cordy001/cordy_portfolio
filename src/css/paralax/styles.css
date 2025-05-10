@@ -1,10 +1,10 @@
 
 @keyframes rotate {
     0% {
-        transform: rotate(0) scale(0.2);
+        transform: rotate(0);
     }
     100% {
-        transform: rotate(410deg) scale(1);
+        transform: rotate(360deg);
     }
 }
 
@@ -24,4 +24,102 @@
     50%{
         opacity: 0.6;
     }
+}
+
+@keyframes move_down_up {
+    0% {
+        transform: translateY(0);
+    }
+    15% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-42px);
+    }
+    50% {
+        transform: translateY(-42px);
+    }
+    60% {
+        transform: translateY(-86px);
+    }
+    80% {
+        transform: translateY(-86px);
+    }
+    
+}
+
+/* Content 1 */
+
+/* Float Effects */
+.content_titles, .profile_pic, .my_info {
+    opacity: 0;
+    transition: 1s ease-in-out;
+    transform: translateY(30px);
+}
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* spans blocks BG effect */
+.paralax1 {
+    width: 100%;
+    height: min(100dvh, 700px);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box_1 {
+    padding: 140px;
+    border: 10px solid #d9d9d9;
+    opacity: 0.3;
+    filter: blur(10px) brightness(50px);
+    transition: 1s ease-in-out;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+}
+.box_2 {
+    padding: 140px;
+    border: 10px solid #d9d9d9;
+    opacity: 0.3;
+    filter: blur(10px) brightness(50px);
+    transition: 1s ease-in-out;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+}
+.box_3 {
+    padding: 140px;
+    border: 10px solid #d9d9d9;
+    opacity: 0.3;
+    filter: blur(10px) brightness(50px);
+    transition: 1s ease-in-out;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    bottom: 10%;
+}
+
+.vscode_c1 {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.termux_c1 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.show_3d {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+.Three {
+    width: 100%;
+    height: min(100dvh, 700px);
+    z-index: -999;
+    position: fixed;
 }

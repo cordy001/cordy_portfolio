@@ -1,8 +1,21 @@
 
 @media(max-width: 700px){
     
+    .contents_1_right {
+        width: 90%;
+        height: 40%;
+    }
+    .contents_1_left {
+        height: 30%;
+    }
+    .contents_cons {
+        flex-flow: column;
+    }
     .banner_front h1 {
         font-size: 3rem;
+    }
+    .my_info h1 {
+        font-size: 2.5rem;
     }
     .logo_text h1, .nav_bar_fix h1 {
         margin: 0.5rem;
@@ -41,10 +54,9 @@
     }
     .banner_effect1 { 
         left: -80dvw;
-        transform: translateX(140dvw);
     }
     .banner_effect2 {
         right: -80dvw;
-        transform: translateX(-140dvw);
     }
+    
 }

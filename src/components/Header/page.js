@@ -1,6 +1,3 @@
-import "@/css/layouts/styles.css"
-import "@/css/responsive/styles.css"
-import "@/css/hover/styles.css"
 import { useRef, useState, useEffect } from "react";
 import { useRouter } from "next/navigation"
 import Image from "next/image"
@@ -67,6 +64,20 @@ export default function Header() {
             fade_in.current.style.transform = "translateY(0)"
             
         }, 5000)
+        
+        window.addEventListener("scroll", () => {
+            
+            const winY = window.scrollY
+            
+            if (winY > 80) {
+                fade_in.current.style.background = "#010409"
+            }
+            if (winY < 80) {
+                fade_in.current.style.background = "transparent"
+            }
+            
+            
+        })
         
     }, [])
     

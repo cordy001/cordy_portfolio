@@ -1,19 +1,27 @@
+:root {
+    --header-bg-color: #0d1117;
+    --background-color: #000;
+}
+.cons_support {
+    width: 100%;
+    height: min(100dvh, 800px);
+    transition: 1s ease;
+}
+
 
 /* Header */
 .header {
     width: 100%;
-    height: min(10dvh, 70px);
+    height: min(20dvh, 70px);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: #010409; */
+    /* background: var(--header-bg-color); */
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
-    transition: 1.5s ease-in-out;
-    opacity: 0;
-    transform: translateY(-2dvh);
+    transition: 1s ease-in-out;
 }
 .header_support {
     width: 100%;
@@ -68,7 +76,7 @@
     flex-flow: column;
     width: 0;
     height: 100dvh;
-    background-color: #0d1117;
+    background-color: var(--background-color);
     bottom: 0;
     top: 0;
     left: 0;
@@ -85,8 +93,8 @@
 }
 .nav_bar_fix div {
     width: 100dvw;
-    height: min(10dvh, 70px);
-    background-color: #010409;
+    height: min(20dvh, 70px);
+    background-color: var(--header-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,54 +122,17 @@
 /* Banner */
 .banner {
     width: 100%;
-    height: 100dvh;
-    position: relative;
+    height: min(100dvh, 800px);
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
-.banner_back {
-    position: absolute;
     z-index: -1;
-    bottom: 10dvh;
-    left: 10dvw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    padding: 50px;
-    box-shadow: 0 0 15px 10px #0f0, inset 0 0 15px 5px #fff;
-    border: 1px solid #fff;
+    transition: 1s ease;
 }
-.banner_back span {
-    
-}
-.banner_effects {
-    width: 100%;
-    height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: -9999;
-    animation: rotate 5s ease-in-out forwards;
-}
-.banner_effects span {
-    border-radius: 50%;
-    padding: 30%;
-    box-shadow: 0 5dvw 10dvw 2dvw #0f0, 0 -10dvw 10dvw 2dvw #ff0, inset 0 -5dvw 5dvw 1dvw #fff;
-    position: absolute;
-    transition: 6s ease-in-out;
-    background: #0d1117;
-}
-.banner_effect1 { 
-    left: -40%;
-    transform: translateX(100dvw) scale(0.2);
-}
-.banner_effect2 {
-    right: -40%;
-    transform: translateX(-100dvw) scale(0.2);
+.font_con {
+    transition: 50ms ease;
 }
 .banner_front {
     font-weight: bolder;
@@ -172,14 +143,105 @@
     align-items: center;
     flex-flow: column;
 }
-.banner_front p, .banner_front h1 {
-    opacity: 0;
-    transform: translateY(2dvh);
-    transition: 1s ease-in-out;
-}
 .banner_front h1 {
     font-size: 4rem;
 }
 
+/* Contents */
+.contents_1 {
+    width: 100%;
+    height: min(100dvh, 700px);
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 30dvh 20dvh var(--background-color);
+    transition: 1s ease;
+    flex-flow: column;
+    position: relative;
+}
+.content_titles {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 0 0;
+}
+.content_titles h1 {
+    margin: 1.2rem 0;
+    font-size: 2rem;
+}
+.contents_cons {
+    width: 100%;
+    height: min(90dvh, 500px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contents_1_left, .contents_1_right {
+    width: 50%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile_pic {
+    border-radius: 18px;
+    border: 2px solid #fff;
+}
+.my_info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+.my_info h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+.to_skill {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: left;
+}
+.to_skill_slide {
+    width: auto;
+    height: 40px;
+    margin: 0 0.3rem;
+    clip-path: polygon(0 0, 120px 0, 120px 40px, 0 40px);
+    position: relative;
+}
+.to_skill_slide div {
+    position: absolute;
+    top: 0;
+    animation: move_down_up 5s linear infinite;
+}
 
-
+.Content_2 {
+    width: 100%;
+    height: min(auto, 800px);
+    transition: 1s ease-in-out;
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-flow: column;
+}
+.Content_2_object {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Content_2_object div {
+    width: 20%;
+    height: min(50dvh, 400px);
+    background: #f00;
+    margin: 1rem; 
+    border-radius: 0.9rem;
+    flex-basis: 230px;
+}
