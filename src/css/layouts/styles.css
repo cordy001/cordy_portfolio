@@ -6,6 +6,9 @@
     width: 100%;
     height: min(100dvh, 800px);
     transition: 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

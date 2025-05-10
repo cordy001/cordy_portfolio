@@ -49,7 +49,7 @@ export default function Content_3() {
     return (
     <div className="content_3">
         <div className="content_3_left">
-            <Image ref={float1} className="image_1" width={300} height={300} src="/assets/coreDoa.png" alt="Image" />
+            <Image ref={float1} className="image_l1" width={300} height={300} src="/assets/coreDoa.png" alt="Image" />
         </div>
         <div className="content_3_right">
             <h1 ref={float2} className="my_info">Blockchain & Cloud Tech Involvement</h1> 

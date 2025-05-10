@@ -51,7 +51,7 @@
 /* Content 1 */
 
 /* Float Effects */
-.content_titles, .profile_pic, .my_info, .Content_titles_2, .Content_2_object_left_1, .Content_2_object_left_2, .Content_2_object_right_1, .Content_2_object_right_2, .content_3_left, .content_3_right {
+.content_titles, .profile_pic, .my_info, .Content_titles_2, .Content_2_object_left_1, .Content_2_object_left_2, .Content_2_object_right_1, .Content_2_object_right_2, .image_l1 {
     opacity: 0;
     transition: 1s ease-in-out;
     transform: translateY(30px);
