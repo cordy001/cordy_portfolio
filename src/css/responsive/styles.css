@@ -8,7 +8,14 @@
     .contents_1_left {
         height: 30%;
     }
-    .contents_cons {
+    .content_3_left, .content_3_right {
+        width: 90%;
+    }
+    .content_3_right p {
+        font-size: 0.8rem;
+        padding: 0;
+    }
+    .contents_cons, .content_3 {
         flex-flow: column;
     }
     .banner_front h1 {

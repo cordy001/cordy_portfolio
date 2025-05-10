@@ -155,7 +155,7 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    box-shadow: 0 0 30dvh 20dvh var(--background-color);
+    box-shadow: 0 0 10dvh 5dvh var(--background-color);
     transition: 1s ease;
     flex-flow: column;
     position: relative;
@@ -218,6 +218,7 @@
     animation: move_down_up 5s linear infinite;
 }
 
+/* Content 2 */
 .Content_2 {
     width: 100%;
     height: min(auto, 800px);
@@ -237,11 +238,89 @@
     align-items: center;
     flex-wrap: wrap;
 }
-.Content_2_object div {
-    width: 20%;
-    height: min(50dvh, 400px);
-    background: #f00;
-    margin: 1rem; 
-    border-radius: 0.9rem;
-    flex-basis: 230px;
+.Content_titles_2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+.Content_2_object_left, .Content_2_object_right {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 600px;
+    flex-wrap: wrap;
+}
+.Content_2_object_left_1, .Content_2_object_left_2, .Content_2_object_right_1, .Content_2_object_right_2 {
+    width: 50%;
+    height: min(60dvh, 400px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 250px;
+    margin: 3rem 0;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    box-shadow: inset 5px 5px 5px 10px #0f0;
+    flex-flow: column;
+    overflow: hidden;
+    background: #044100;
+}
+.image_1, .image_2, .image_3, .image_4 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info_1, .info_2, .info_3, .info_4 {
+    padding: 0 1.5rem;
+    width: 100%;
+    height: 50%;
+    font: ;
+}
+.Content_2_object_left h1, .Content_2_object_right h1 {
+    font-size: 1.09rem;
+    font-weight: bolder;
+}
+.Content_2_object_left p, .Content_2_object_right p {
+    font-size: 0.7rem;
+}
+/* .image_1, .image_2, .image_3, .image_4 {
+    
+} */
+
+/* Content 3 */
+.content_3 {
+    width: 100%;
+    height: min(100dvh, 800px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color);
+}
+.content_3_left, .content_3_right {
+    width: 50%;
+    height: inherit;
+    display: flex;
+}
+.content_3_left {
+    justify-content: center;
+    align-items: center;
+}
+.content_3_right {
+    flex-flow: column;
+    justify-content: center;
+}
+.content_3_right h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 1rem 0;
+}
+.content_3_right p {
+    padding: 0 1.5rem 0 0;
+    margin: 0 1rem 0 0;
 }

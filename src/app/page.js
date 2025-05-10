@@ -7,6 +7,8 @@ import Header from "@/components/Header/page"
 import Banner from "@/components/Banner/page"
 import Content_1 from "@/components/Content_1/page"
 import Content_2 from "@/components/Content_2/page"
+import Content_3 from "@/components/Content_3/page"
+import Content_4 from "@/components/Content_4/page"
 import Threejs from "@/three3d/page"
 
 
@@ -21,6 +23,8 @@ export default function Home() {
       </div>
       <Content_1/>
       <Content_2/>
+      <Content_3/>
+      <Content_4/>
   </div>
   )
 }

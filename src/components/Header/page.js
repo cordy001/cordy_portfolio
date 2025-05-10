@@ -70,7 +70,7 @@ export default function Header() {
             const winY = window.scrollY
             
             if (winY > 80) {
-                fade_in.current.style.background = "#010409"
+                fade_in.current.style.background = "#0d1117"
             }
             if (winY < 80) {
                 fade_in.current.style.background = "transparent"

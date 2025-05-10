@@ -51,7 +51,7 @@
 /* Content 1 */
 
 /* Float Effects */
-.content_titles, .profile_pic, .my_info {
+.content_titles, .profile_pic, .my_info, .Content_titles_2, .Content_2_object_left_1, .Content_2_object_left_2, .Content_2_object_right_1, .Content_2_object_right_2, .content_3_left, .content_3_right {
     opacity: 0;
     transition: 1s ease-in-out;
     transform: translateY(30px);
@@ -119,7 +119,7 @@
 }
 .Three {
     width: 100%;
-    height: min(100dvh, 700px);
+    height: min(100dvh, 400px);
     z-index: -999;
     position: fixed;
 }

@@ -18,18 +18,23 @@ export default function Content_1() {
                   entry.target.classList.add("show")
                   
               } else {
+                  
                   entry.target.classList.remove("show")
+                  
               }
           })
           
       }, {
-          threshold: 0.2
+          threshold: 0.1
       })
       
       if (float1.current) observer1.observe(float1.current)
       
+     
+     
       if (float2.current) observer1.observe(float2.current)
-      
+          
+         
       if (float3.current) observer1.observe(float3.current)
       
     }, [])
